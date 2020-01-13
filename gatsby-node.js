@@ -31,7 +31,7 @@ exports.createPages = ({ graphql, actions }) => {
                 node {
                   id
                   data {
-                    Name
+                    EffortName
                     Website
                     Description
                     Image {
@@ -53,16 +53,16 @@ exports.createPages = ({ graphql, actions }) => {
         }
 
         result.data.allAirtable.edges.forEach(edge => {
-          let path = edge.node.data.Name.replace(/ /g, '-')
+          let path = edge.node.data.EffortName.replace(/ /g, '-')
           .replace(/[,&]/g, '')
           .toLowerCase()
           createPage({
             path: path, // required, we don't have frontmatter for this page hence separate if()
             component: tempChar,
             context: {
-              name: edge.node.data.Name,
+              name: edge.node.data.EffortName,
               link: edge.node.data.Url,
-              heading: edge.node.data.Name,
+              heading: edge.node.data.EffortName,
               Description: edge.node.data.Description,
               desc: edge.node.data.Description,
               image: edge.node.data.Image,

@@ -55,15 +55,15 @@ class Index extends React.Component {
   }
   let records = this.props.data.allAirtable.edges
     return _.map(records, (record, index) => {
-        let { Name, bio, Image, Description, PaypalEmail, PaypalUrl, Website } = record.node.data
+        let { EffortName, bio, Image, Description, PaypalEmail, PaypalUrl, Website } = record.node.data
         let slug =
-          Name.replace(/ /g, '-')
+          EffortName.replace(/ /g, '-')
             .replace(/[,&]/g, '')
             .toLowerCase() + '/'
         return (
           <Block
             key={index}
-            title={Name}
+            title={EffortName}
             bio={Description}
             img={Image}
             slug={slug}
@@ -102,7 +102,7 @@ export const pageQuery = graphql`
       edges {
         node {
           data {
-            Name
+            EffortName
             Description
             Image {
               url
