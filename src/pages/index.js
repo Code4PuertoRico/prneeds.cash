@@ -46,6 +46,7 @@ class Index extends React.Component {
           </h2>
           <p>
             This curated list focuses on cash donations. If you are in Puerto Rico and would like to donate goods, 
+            please checkout <a href = 'https://docs.google.com/document/d/1VE61j7xHmVgiVQMW1FhqR3ZxVgi__YonTNDmPjiUS7w/edit' target = '_blank'>this list of resources</a>.
           </p>
         </div>
       </div>

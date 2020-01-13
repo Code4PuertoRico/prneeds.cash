@@ -20,16 +20,15 @@ export default class Paypal extends React.Component {
     }
     return (
       <div class="box">
-      <button class="paypal-button" onclick="window.location.href = '{url}';">
-      <span class="paypal-button-title">
-      Donate with<span> </span>
-    </span>
-    <span class="paypal-logo">
-      <i>Pay</i><i>Pal</i>
-    </span>
-
-      </button>
-      </div>
+      <a class="paypal-button" href={url} target = '_blank'>
+        <span class="paypal-button-title">
+          Donate with<span> </span>
+        </span>
+        <span class="paypal-logo">
+          <i>Pay</i><i>Pal</i>
+        </span>
+      </a>
+    </div>
     )
   }
 }

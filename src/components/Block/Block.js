@@ -27,12 +27,14 @@ export default class Block extends React.Component {
     let block
     if(paypalUrl || paypalEmail){
       block = <div className="wrap">
-        <div style={style} className="image">
-          <div className={`overlay`} />
-          <img class="icon" src={LinkIcon} alt="Link" />
-        </div>
-        <div className={`title`}>
-          <h2>{title}</h2>
+        <div className="top">
+          <div style={style} className="image">
+            <div className={`overlay`} />
+            <img class="icon" src={LinkIcon} alt="Link" />
+          </div>
+          <div className={`title`}>
+            <h2>{title}</h2>
+          </div>
         </div>
         <div className="text">
           <p>"{desc}"</p>
@@ -48,12 +50,14 @@ export default class Block extends React.Component {
     } else{
       block = 
         <div className="wrap">
-          <div style={style} className="image">
-            <div className={`overlay`} />
-            <img class="icon" src={LinkIcon} alt="Link" />
-          </div>
-          <div className={`title`}>
-            <h2>{title}</h2>
+          <div className="top">
+            <div style={style} className="image">
+              <div className={`overlay`} />
+              <img class="icon" src={LinkIcon} alt="Link" />
+            </div>
+            <div className={`title`}>
+              <h2>{title}</h2>
+            </div>
           </div>
           <div className="text">
             <p>"{bio}"</p>
