@@ -1,0 +1,38 @@
+@import '../../scss/index.scss';
+
+.header__root {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    background: #222;
+
+    .links {
+        background: $colorGrey;
+        height: 60px;
+        display: flex;
+        @include container();
+
+        .icon {
+            display: flex;
+            align-items: center;
+            height: 60px;
+
+            img {
+                height: 45px;
+            }
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            height: 60px;
+
+            img {
+                width: 18px;
+                margin-left: 1rem;
+            }
+        }
+    }
+}

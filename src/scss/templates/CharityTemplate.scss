@@ -1,0 +1,149 @@
+@import '../index.scss';
+
+.charity__temp__root {
+    margin-top: 60px;
+
+    .hero__root {
+        .back {
+            position: absolute;
+            top: 2rem;
+            left: 0;
+            width: 100%;
+            @include container();
+
+            img {
+                width: 3.5rem;
+            }
+        }
+
+        .content {
+            text-align: center;
+        }
+    }
+
+    .template__body {
+        @include container();
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+        @include desktop() {
+            .left {
+                width: 64% !important;
+                order: 0 !important;
+            }
+
+            .right {
+                width: 34% !important;
+                order: 1 !important;
+            }
+        }
+
+        .left,
+        .right {
+            width: 100%;
+            @include fadeInUp($duration: 0.5s);
+
+            h2 {
+                margin: 0;
+            }
+
+            .heading {
+                background: black;
+                color: white;
+                position: relative;
+                transition: .3s ease-in-out;
+                @include container();
+                text-align: center;
+                min-height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &.girls-who-code {
+                    @include gradientGirls();
+                }
+
+                &.fight-for-the-forgotten {
+                    @include gradientFight();
+                }
+
+                &.susan-g-komen {
+                    @include gradientSusan();
+                }
+
+                &.rainn {
+                    @include gradientRainn();
+                }
+            }
+        }
+
+        .right {
+            order: 0;
+            margin-bottom: 2rem;
+
+            @include desktop() {
+                margin-bottom: 0;
+            }
+
+            .don__items {
+
+                padding: 5px;
+
+                &.girls-who-code {
+                    @include gradientGirls();
+                }
+
+                &.fight-for-the-forgotten {
+                    @include gradientFight();
+                }
+
+                &.susan-g-komen {
+                    @include gradientSusan();
+                }
+
+                &.rainn {
+                    @include gradientRainn();
+                }
+
+                p {
+                    margin: 0;
+                }
+
+                a {
+                    color: #222;
+                    font-style: italic;
+                    text-decoration: underline;
+                }
+
+                .item {
+                    background: white;
+                    padding: 1rem;
+                    margin-bottom: 5px;
+
+                    &:nth-child(2) {
+                        background: white;
+                    }
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+
+
+            }
+        }
+
+        .left {
+            order: 1;
+
+            .bio {
+                padding: 1rem;
+            }
+        }
+
+    }
+}

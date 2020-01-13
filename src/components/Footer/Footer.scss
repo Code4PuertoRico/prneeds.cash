@@ -1,0 +1,37 @@
+@import '../../scss/index.scss';
+
+.footer__root {
+    background: #222;
+
+    .wrap {
+        height: 60px;
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        @include container();
+    }
+
+
+    p {
+        margin: 0;
+
+        a {
+            font-weight: bold;
+        }
+
+        .netlify {
+            color: #33af9e;
+
+        }
+
+        .airtable {
+            color: #ec476e;
+        }
+
+        .gatsby {
+            color: #8d65b6;
+        }
+    }
+}

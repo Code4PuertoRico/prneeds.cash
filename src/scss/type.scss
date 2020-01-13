@@ -1,0 +1,48 @@
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a,
+ol,
+select,
+input {
+    font-family: 'Klartext Mono', Courier, monospace;
+}
+
+h1,
+h2,
+h3,
+    {
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: .1px;
+}
+
+a {
+    cursor: pointer;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.btn {
+    padding: 3px 0;
+    width: 100px;
+    max-width: 100%;
+    text-align: center;
+    border: 1px solid white;
+    text-decoration: none !important;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    top: 0%;
+
+}
+
+.btn__outline {
+    @extend .btn;
+}

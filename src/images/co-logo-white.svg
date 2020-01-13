@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="32px" viewBox="0 0 38 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-556.000000, -414.000000)" fill="#FFFFFF">
+            <g id="Logo" transform="translate(552.000000, 407.000000)">
+                <g transform="translate(4.000000, 7.000000)">
+                    <g id="C">
+                        <polygon id="Rectangle" transform="translate(9.116958, 9.172641) scale(-1, 1) rotate(45.000000) translate(-9.116958, -9.172641) " points="-1.78532844 7.68910793 20.0192454 7.68910793 20.0192454 10.6561751 -1.78532844 10.6561751"></polygon>
+                        <polygon id="Rectangle" transform="translate(9.116958, 22.821150) scale(-1, -1) rotate(45.000000) translate(-9.116958, -22.821150) " points="-1.78532844 21.3376168 20.0192454 21.3376168 20.0192454 24.3046839 -1.78532844 24.3046839"></polygon>
+                    </g>
+                    <g id="O" transform="translate(6.460000, 0.385542)">
+                        <g id="C">
+                            <polygon id="Rectangle" transform="translate(9.096153, 8.952451) scale(-1, 1) rotate(45.000000) translate(-9.096153, -8.952451) " points="-1.7801721 7.46295977 19.9724781 7.46295977 19.9724781 10.4419428 -1.7801721 10.4419428"></polygon>
+                            <polygon id="Rectangle" transform="translate(9.096153, 22.655773) scale(-1, -1) rotate(45.000000) translate(-9.096153, -22.655773) " points="-1.7801721 21.1662819 19.9724781 21.1662819 19.9724781 24.145265 -1.7801721 24.145265"></polygon>
+                        </g>
+                        <g id="C" transform="translate(22.540000, 16.000000) scale(-1, 1) translate(-22.540000, -16.000000) translate(13.540000, 0.000000)">
+                            <polygon id="Rectangle" transform="translate(9.096153, 8.952451) scale(-1, 1) rotate(45.000000) translate(-9.096153, -8.952451) " points="-1.7801721 7.46295977 19.9724781 7.46295977 19.9724781 10.4419428 -1.7801721 10.4419428"></polygon>
+                            <polygon id="Rectangle" transform="translate(9.096153, 22.655773) scale(-1, -1) rotate(45.000000) translate(-9.096153, -22.655773) " points="-1.7801721 21.1662819 19.9724781 21.1662819 19.9724781 24.145265 -1.7801721 24.145265"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,168 @@
+@import '../../scss/index.scss';
+@import '../../scss/tools.scss';
+
+.blocks__root {
+    @include container();
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1500;
+
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .block__root {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px rgba(34, 34, 34, 0.4);
+        position: relative;
+        @include fadeInUp($duration: 0.5s);
+        transition: .3s ease-in-out;
+        top: 0;
+
+        @include desktop {
+            width: 48%;
+            margin-right: 4%;
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+
+        &:hover {
+            top: -5px;
+            box-shadow: 0 20px 40px rgba(34, 34, 34, 0.4);
+        }
+
+        &:nth-child(even) {
+            .image {
+                .overlay {
+                    @include gradientPRRed();
+                }
+            }
+
+            .title {
+                @include gradientPRRed();
+
+            }
+
+        }
+
+        &:nth-child(odd){
+
+            .image {
+                .overlay {
+                    @include gradientPRBlue();
+                }
+            }
+
+            .title {
+                @include gradientPRBlue();
+
+            }
+        }
+
+        &.susan-g-komen {
+
+            .image {
+                .overlay {
+                    @include gradientSusan();
+                }
+            }
+
+            .title {
+                @include gradientSusan();
+
+            }
+        }
+
+        &.rainn {
+
+            .image {
+                .overlay {
+                    @include gradientRainn();
+                }
+            }
+
+            .title {
+                @include gradientRainn();
+
+            }
+        }
+
+        .link {
+            position: absolute;
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 200;
+        }
+
+        .image,
+        .overlay {
+            border-radius: 5px 5px 0 0;
+        }
+
+        .image {
+            padding-bottom: 60%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+
+            .icon {
+                width: 30px;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                z-index: 200;
+                ;
+            }
+
+            .overlay {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                opacity: .6;
+            }
+        }
+
+
+
+        .title {
+            text-align: center;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+            h2 {
+                margin: 0;
+            }
+        }
+
+        .text {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .cta-donate {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+    }
+}

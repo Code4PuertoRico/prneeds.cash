@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Klartext Mono';
+    src: url('KlartextMono-Light.eot');
+    src: url('KlartextMono-Light.eot?#iefix') format('embedded-opentype'),
+        url('KlartextMono-Light.woff2') format('woff2'),
+        url('KlartextMono-Light.woff') format('woff'),
+        url('KlartextMono-Light.ttf') format('truetype'),
+        url('KlartextMono-Light.svg#KlartextMono-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klartext Mono';
+    src: url('KlartextMono-BoldItalic.eot');
+    src: url('KlartextMono-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('KlartextMono-BoldItalic.woff2') format('woff2'),
+        url('KlartextMono-BoldItalic.woff') format('woff'),
+        url('KlartextMono-BoldItalic.ttf') format('truetype'),
+        url('KlartextMono-BoldItalic.svg#KlartextMono-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
