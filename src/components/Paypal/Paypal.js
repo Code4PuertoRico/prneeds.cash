@@ -6,7 +6,8 @@ import './Paypal.scss'
 
 export default class Paypal extends React.Component {
   static propTypes = {
-    paypal: PropTypes.string.isRequired
+    paypalUrl: PropTypes.string,
+    paypalEmail: PropTypes.string
   }
 
   render() {
@@ -19,12 +20,12 @@ export default class Paypal extends React.Component {
       url = paypalUrl
     }
     return (
-      <div class="box">
-      <a class="paypal-button" href={url} target = '_blank'>
-        <span class="paypal-button-title">
+      <div className="box">
+      <a className="paypal-button" href={url} target = '_blank'>
+        <span className="paypal-button-title">
           Donate with<span> </span>
         </span>
-        <span class="paypal-logo">
+        <span className="paypal-logo">
           <i>Pay</i><i>Pal</i>
         </span>
       </a>

@@ -12,8 +12,8 @@ export default class Block extends React.Component {
     img: PropTypes.array.isRequired,
     bio: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
-    paypalEmail: PropTypes.string.isRequired,
-    paypalUrl: PropTypes.string.isRequired
+    paypalEmail: PropTypes.string,
+    paypalUrl: PropTypes.string
   }
 
   render() {
@@ -30,7 +30,7 @@ export default class Block extends React.Component {
         <div className="top">
           <div style={style} className="image">
             <div className={`overlay`} />
-            <img class="icon" src={LinkIcon} alt="Link" />
+            <img className="icon" src={LinkIcon} alt="Link" />
           </div>
           <div className={`title`}>
             <a href = {website} target = '_blank'><h2>{title}</h2></a>
