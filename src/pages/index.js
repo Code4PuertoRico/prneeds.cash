@@ -30,7 +30,7 @@ class Index extends React.Component {
       }
       return a;
     }
-    let records = shuffle(this.props.data.allAirtable.edges)
+    let records = this.props.data.allAirtable.edges
 
     return (
       <div className="hero__root" style={style}>
@@ -41,7 +41,7 @@ class Index extends React.Component {
           <h2>
             After an <a target = '_blank' href='//en.wikipedia.org/wiki/2020_Puerto_Rico_earthquakes'>earthquake swarm</a> rattled the islands, 
             Puerto Ricans have self-organized to provide assistance to those affected. 
-            The organizations and efforts listed below are accepting cash donations in order to help  
+            The organizations and efforts listed in this site are accepting cash donations in order to help  
             the affected population in the south of Puerto Rico. 
           </h2>
           <p>
@@ -83,11 +83,11 @@ class Index extends React.Component {
       <Layout>
         <Helmet>
           <title>
-            Chase Ohlson's Charities | Donations from Freelance Web Development
+            Puerto Rico Needs Money
           </title>
           <meta
             name="description"
-            content="When you work with Chase Ohlson on a freelance web development project, part of your donation will fo to one of these amazing organizations."
+            content="The organizations and efforts listed in this site are accepting cash donations in order to help the affected population in the south of Puerto Rico."
           />
         </Helmet>
         {this._renderHero()}

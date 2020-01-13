@@ -20,10 +20,9 @@ export default class Footer extends Component {
               Airtable
             </a>{' '}
             &{' '}
-            <a className="netlify" href="https://netlify.com">
-              Netlify
-            </a>{' '}
-            in Los Angeles
+            <a className="aws-amplify" href="https://aws.amazon.com/amplify/">
+              AWS Amplify
+            </a>
           </p>
         </div>
       </div>
