@@ -53,7 +53,7 @@ class Index extends React.Component {
     }
     return a;
   }
-  let records = shuffleArray(this.props.data.allAirtable.edges)
+  let records = this.props.data.allAirtable.edges
     return _.map(records, (record, index) => {
         let { Name, bio, Image, Description, PaypalEmail, PaypalUrl, Website } = record.node.data
         let slug =
