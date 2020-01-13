@@ -1,3 +1,4 @@
+
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -7,7 +8,6 @@ module.exports = {
     title: "Puerto Rico Needs Cash",
     siteUrl: `https://prneeds.cash`,
     description: "After an earthquake swarm rattled the islands, Puerto Ricans have self-organized to provide assistance to those affected. The organizations and efforts listed in this site are accepting cash donations in order to help the affected population in the south of Puerto Rico.",
-    image: "/images/og-main.jpg",
     twitterUsername: "@puertorico",
     titleTemplate: "%s · 💰🇵🇷"
   },

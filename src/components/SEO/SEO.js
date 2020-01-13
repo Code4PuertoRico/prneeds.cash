@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
+import Img from "../../images/og-main.jpg"
 import { StaticQuery, graphql } from "gatsby"
 const SEO = ({ title, description, image, pathname, article }) => (
   <StaticQuery
@@ -12,7 +13,6 @@ const SEO = ({ title, description, image, pathname, article }) => (
           titleTemplate,
           defaultDescription,
           url,
-          defaultImage,
           twitterUsername,
         },
       },
@@ -20,7 +20,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        image: `${url}${image || defaultImage}`,
+        image: Img,
         url: `${url}${pathname || "/"}`,
       }
       return (
@@ -75,7 +75,6 @@ const query = graphql`
         titleTemplate
         defaultDescription: description
         url: siteUrl
-        defaultImage: image
         twitterUsername
       }
     }
