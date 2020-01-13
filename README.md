@@ -1,4 +1,4 @@
-You'll need node.js, yarn, and our airtable key. 
+You'll need node.js, yarn, gatsby-cli, and our airtable key. 
 
 ```
 export AIRTABLE_KEY=<key>
