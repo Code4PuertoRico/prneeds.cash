@@ -148,6 +148,14 @@
             }
         }
 
+        .title a, .title a:visited{
+            color: #fff;
+        }
+
+        .title a:hover{
+            color: #ccc;
+        }
+
         .text {
             display: flex;
             align-items: center;

@@ -15,22 +15,6 @@ class Index extends React.Component {
     const style = {
       background: `url(${Background})`,
     }
-    
-    /**
-    * Shuffles array in place.
-    * @param {Array} a items An array containing the items.
-    */
-    function shuffleArray(array) {
-      let i = array.length - 1;
-      for (; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        const temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-      }
-      return array;
-    }
-    let records = shuffleArray(this.props.data.allAirtable.edges)
 
     return (
       <div className="hero__root" style={style}>
@@ -54,15 +38,28 @@ class Index extends React.Component {
   }
 
   _renderBlocks = () => {
-    let records = this.props.data.allAirtable.edges
+    /**
+    * Shuffles array in place.
+    * @param {Array} a items An array containing the items.
+    */
+  function shuffleArray(array) {
+    let a = JSON.parse(JSON.stringify(array));
+    let i = a.length - 1;
+    for (; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = a[i];
+      a[i] = a[j];
+      a[j] = temp;
+    }
+    return a;
+  }
+  let records = shuffleArray(this.props.data.allAirtable.edges)
     return _.map(records, (record, index) => {
         let { Name, bio, Image, Description, PaypalEmail, PaypalUrl, Website } = record.node.data
         let slug =
           Name.replace(/ /g, '-')
             .replace(/[,&]/g, '')
             .toLowerCase() + '/'
-        let paypalEmail = "cdpecpr@gmail.com"
-        let amount = "50"
         return (
           <Block
             key={index}

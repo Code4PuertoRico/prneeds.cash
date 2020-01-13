@@ -17,7 +17,7 @@ export default class Block extends React.Component {
   }
 
   render() {
-    let { title, img, bio, slug, paypalEmail, paypalUrl } = this.props
+    let { title, img, bio, slug, paypalEmail, paypalUrl, website } = this.props
   
     let style = {
       backgroundImage: `url(${img[0].url})`,
@@ -33,7 +33,7 @@ export default class Block extends React.Component {
             <img class="icon" src={LinkIcon} alt="Link" />
           </div>
           <div className={`title`}>
-            <h2>{title}</h2>
+            <a href = {website} target = '_blank'><h2>{title}</h2></a>
           </div>
         </div>
         <div className="text">
