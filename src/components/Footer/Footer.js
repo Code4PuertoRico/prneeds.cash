@@ -27,7 +27,7 @@ export default class Footer extends Component {
             ||{' '}
             <a className="download-list" href = "https://airtable.com/shrsh1Od4D8PtXVhI" target = "_blank">Download this list</a>{' '}
             ||{' '}
-            <a className="improve-code" href = "https://github.com/Code4PuertoRico/prneeds.cash" target = "_blank">Check out the code</a>{' '}
+            <a className="improve-code" href = "https://github.com/Code4PuertoRico/prneeds.cash" target = "_blank">Contribute to this project.</a>{' '}
             
           </p>
         </div>

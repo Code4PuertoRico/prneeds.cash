@@ -11,7 +11,12 @@
         justify-content: center;
         text-align: center;
         @include container();
+        @include mobile() {   
+            height: 100px;
+        }
     }
+
+   
 
 
     p {

@@ -25,12 +25,12 @@ class Index extends React.Component {
           <h2>
             While a <a target = '_blank' href='//en.wikipedia.org/wiki/2020_Puerto_Rico_earthquakes'>swarm of earthquakes</a> rattled the islands, 
             Puerto Ricans self-organized to provide assistance to those affected. 
-            The organizations and efforts listed in this site are accepting cash donations in order to help  
-            the affected population in the south of Puerto Rico. 
+            The efforts listed below accept cash donations online and using it to help  
+            the affected communities. 
           </h2>
           <p>
-            This curated list focuses on cash donations. If you are in Puerto Rico and would like to donate goods, 
-            please checkout <a href = 'https://docs.google.com/document/d/1VE61j7xHmVgiVQMW1FhqR3ZxVgi__YonTNDmPjiUS7w/edit' target = '_blank'>this list of resources</a>.
+            If you are in PR and would like to donate goods, 
+            please see <a href = 'https://docs.google.com/document/d/1VE61j7xHmVgiVQMW1FhqR3ZxVgi__YonTNDmPjiUS7w/edit' target = '_blank'>this list of resources</a>.
           </p>
         </div>
       </div>
