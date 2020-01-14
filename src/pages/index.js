@@ -23,12 +23,13 @@ class Index extends React.Component {
         <div className="content">
           <h1>Support Local Grassroot Organizations</h1>
           <h2>
-            While a <a target = '_blank' href='//en.wikipedia.org/wiki/2020_Puerto_Rico_earthquakes'>swarm of earthquakes</a> rattled the islands, 
+            While a <a target = '_blank' rel="noopener noreferrer" href='//en.wikipedia.org/wiki/2020_Puerto_Rico_earthquakes'>swarm of earthquakes</a> rattled the islands, 
             Puerto Ricans self-organized to help those affected. The efforts listed below accept donations online to support the affected communities. 
           </h2>
           <p>
             If you are in PR and would like to donate goods, 
-            please see <a href = 'https://docs.google.com/document/d/1VE61j7xHmVgiVQMW1FhqR3ZxVgi__YonTNDmPjiUS7w/edit' target = '_blank'>this list of resources</a>.
+            please see{' '}
+            <a className='font-bold' href = 'https://docs.google.com/document/d/1VE61j7xHmVgiVQMW1FhqR3ZxVgi__YonTNDmPjiUS7w/edit' target = '_blank' rel="noopener noreferrer">this list of resources</a>.
           </p>
         </div>
       </div>

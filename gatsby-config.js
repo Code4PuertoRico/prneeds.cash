@@ -6,7 +6,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: "Support Local Grassroot Organizations",
-    siteUrl: `https://prneeds.cash`,
+    siteUrl: `https://www.prneeds.cash`,
     description: "While a swarm of earthquakes rattled the islands, Puerto Ricans self-organized to help those affected. The efforts listed below accept donations online to support the affected communities.",
     twitterUsername: "@puertorico",
     titleTemplate: "%s · 💰🇵🇷"
@@ -16,10 +16,11 @@ module.exports = {
     'gatsby-plugin-sass',
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-robots-txt',
+    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://prneeds.cash`,
+        siteUrl: `https://www.prneeds.cash`,
       },
     },
     {
