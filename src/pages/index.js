@@ -24,9 +24,7 @@ class Index extends React.Component {
           <h1>Support Local Grassroot Organizations</h1>
           <h2>
             While a <a target = '_blank' href='//en.wikipedia.org/wiki/2020_Puerto_Rico_earthquakes'>swarm of earthquakes</a> rattled the islands, 
-            Puerto Ricans self-organized to provide assistance to those affected. 
-            The efforts listed below accept cash donations online and using it to help  
-            the affected communities. 
+            Puerto Ricans self-organized to help those affected. The efforts listed below accept donations online to support the affected communities. 
           </h2>
           <p>
             If you are in PR and would like to donate goods, 
