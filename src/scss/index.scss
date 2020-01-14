@@ -22,6 +22,14 @@
         }
     }
 
+    a, a:visited{
+        color: rgb(255, 167, 208);
+    }
+
+    a:hover{
+        color: rgb(250, 98, 169);
+    }
+
     .waves {
         position: absolute;
         bottom: -1px;
@@ -29,6 +37,7 @@
         width: 100%;
         @include slideInUp($duration: 0.5s);
     }
+    
 
     .overlay {
         @include gradientPurple();

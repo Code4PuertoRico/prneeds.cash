@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: "Puerto Rico Needs Cash",
     siteUrl: `https://prneeds.cash`,
-    description: "After an earthquake swarm rattled the islands, Puerto Ricans have self-organized to provide assistance to those affected. The organizations and efforts listed in this site are accepting cash donations in order to help the affected population in the south of Puerto Rico.",
+    description: "While a swarm of earthquakes rattled the islands, Puerto Ricans self-organized to provide assistance to those affected. The organizations and efforts listed in this site are accepting cash donations in order to help the affected population in the south of Puerto Rico.",
     twitterUsername: "@puertorico",
     titleTemplate: "%s · 💰🇵🇷"
   },

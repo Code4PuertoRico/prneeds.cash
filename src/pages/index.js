@@ -23,8 +23,8 @@ class Index extends React.Component {
         <div className="content">
           <h1>Puerto Rico Needs Ca$h</h1>
           <h2>
-            After an <a target = '_blank' href='//en.wikipedia.org/wiki/2020_Puerto_Rico_earthquakes'>earthquake swarm</a> rattled the islands, 
-            Puerto Ricans have self-organized to provide assistance to those affected. 
+            While a <a target = '_blank' href='//en.wikipedia.org/wiki/2020_Puerto_Rico_earthquakes'>swarm of earthquakes</a> rattled the islands, 
+            Puerto Ricans self-organized to provide assistance to those affected. 
             The organizations and efforts listed in this site are accepting cash donations in order to help  
             the affected population in the south of Puerto Rico. 
           </h2>
@@ -42,8 +42,7 @@ class Index extends React.Component {
     * Shuffles array in place.
     * @param {Array} a items An array containing the items.
     */
-  function shuffleArray(array) {
-    let a = JSON.parse(JSON.stringify(array));
+  function shuffleArray(a) {
     let i = a.length - 1;
     for (; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -54,8 +53,8 @@ class Index extends React.Component {
     return a;
   }
   let records = this.props.data.allAirtable.edges
-    return _.map(records, (record, index) => {
-        let { EffortName, bio, Image, Description, PaypalEmail, PaypalUrl, Website } = record.node.data
+    return shuffleArray(_.map(records, (record, index) => {
+        let { EffortName, bio, Image, Description, PaypalEmail, PaypalUrl, Website, OtherDonationURL } = record.node.data
         let slug =
           EffortName.replace(/ /g, '-')
             .replace(/[,&]/g, '')
@@ -70,9 +69,10 @@ class Index extends React.Component {
             paypalEmail={PaypalEmail}
             paypalUrl={PaypalUrl}
             website={Website}
+            otherDonationURL={OtherDonationURL}
           />
         )
-    })
+    }))
   }
 
   render() {
@@ -110,6 +110,7 @@ export const pageQuery = graphql`
             PaypalEmail
             PaypalUrl
             Website
+            OtherDonationURL
           }
         }
       }
