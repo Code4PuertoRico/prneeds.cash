@@ -21,8 +21,14 @@ export default class Footer extends Component {
             </a>{' '}
             &{' '}
             <a className="aws-amplify" href="https://aws.amazon.com/amplify/">
-              AWS Amplify
+              AWS Amplify. {' '}
             </a>
+            <a className="nominate-effort" href = "https://airtable.com/shrpyVJHb2f4v6R1r" target = "_blank">Nominate effort</a>{' '}
+            ||{' '}
+            <a className="download-list" href = "https://airtable.com/shrsh1Od4D8PtXVhI" target = "_blank">Download this list</a>{' '}
+            ||{' '}
+            <a className="improve-code" href = "https://github.com/Code4PuertoRico/prneeds.cash" target = "_blank">Check out the code</a>{' '}
+            
           </p>
         </div>
       </div>
