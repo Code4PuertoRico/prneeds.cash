@@ -5,7 +5,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: "Puerto Rico Needs Cash",
+    title: "Support Local Grassroot Organizations",
     siteUrl: `https://prneeds.cash`,
     description: "While a swarm of earthquakes rattled the islands, Puerto Ricans self-organized to provide assistance to those affected. The organizations and efforts listed in this site are accepting cash donations in order to help the affected population in the south of Puerto Rico.",
     twitterUsername: "@puertorico",

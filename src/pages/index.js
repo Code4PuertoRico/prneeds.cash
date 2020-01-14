@@ -21,7 +21,7 @@ class Index extends React.Component {
         <div className="overlay" />
         <img src={Waves} alt="Waves" className="waves" />
         <div className="content">
-          <h1>Puerto Rico Needs Ca$h</h1>
+          <h1>Support Local Grassroot Organizations</h1>
           <h2>
             While a <a target = '_blank' href='//en.wikipedia.org/wiki/2020_Puerto_Rico_earthquakes'>swarm of earthquakes</a> rattled the islands, 
             Puerto Ricans self-organized to provide assistance to those affected. 
@@ -52,7 +52,7 @@ class Index extends React.Component {
     }
     return a;
   }
-  const records = shuffleArray(this.props.data.allAirtable.edges)
+  const records = this.props.data.allAirtable.edges
     return _.map(records, (record, index) => {
         let { EffortName, bio, Image, Description, PaypalEmail, PaypalUrl, Website, OtherDonationURL } = record.node.data
         let slug =
